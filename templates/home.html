@@ -1,0 +1,383 @@
+<!-- <form action="." method="post">{% csrf_token %}
+  {{ form.as_p}}
+  <input type='submit' value='place'/>
+</form> -->
+<!DOCTYPE html>
+
+<html lang="en-us" >
+<head>
+<title>New Case | Portal</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css" />
+
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+<link rel="icon" href="https://iconalone.com/sites/default/files/styles/220x220/public/Dental%20implant.svg_0.png">
+
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/static/admin/css/ie.css" /><![endif]-->
+
+<script type="text/javascript">window.__admin_media_prefix__ = "/static/admin/";</script>
+<script type="text/javascript">window.__admin_utc_offset__ = "19800";</script>
+
+<script type="text/javascript" src="/jsi18n/"></script>
+<link href="/css/admin base.css" type="text/css" media="all" rel="stylesheet" />
+<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" type="text/css" media="screen" rel="stylesheet" />
+<script type="text/javascript" src="/static/admin/js/core.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.js"></script>
+<script type="text/javascript" src="/static/admin/js/jquery.init.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/RelatedObjectLookups.js"></script>
+<script type="text/javascript" src="/static/admin/js/actions.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+<script type="text/javascript" src="/static/django_select2/django_select2.js"></script>
+<script type="text/javascript" src="/static/admin/js/calendar.js"></script>
+<script type="text/javascript" src="/static/admin/js/admin/DateTimeShortcuts.js"></script>
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+
+<body class=" app-appone model-order change-form">
+
+<!-- Container -->
+<div id="container">
+
+
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+
+<h1 id="site-name"><a href="/">Provider Lab Portal</a></h1>
+
+        </div>
+
+
+        <div id="user-tools">
+
+                Hey,
+                <strong>Batman</strong>.
+
+
+
+                    <a href="/">Home</a> /
+
+
+
+
+
+
+                <a href="/password_change/">Change password</a> /
+
+                <a href="/logout/">Log out</a>
+
+        </div>
+
+
+
+    </div>
+    <!-- END Header -->
+
+<div class="breadcrumbs">
+<a href="/">Home</a>
+&rsaquo; <a href="/appone/">Dashboard</a>
+&rsaquo; <a href="/appone/order/">Orders</a>
+&rsaquo; New Case
+</div>
+
+
+
+
+
+
+
+    <!-- Content -->
+    <div id="content" class="colM">
+
+        <h1>New Case</h1>
+        <div id="content-main">
+
+
+
+<form enctype="multipart/form-data" action="" method="post" id="order_form" novalidate><input type='hidden' name='csrfmiddlewaretoken' value='KAduOFCUt6Ja5l8pvx3BgD051nPkG2U6' />
+<div>
+
+
+
+
+
+
+
+  <fieldset class="module aligned ">
+
+
+
+        <div class="form-row field-provider">
+
+
+                <div>
+
+
+                        <label class="required" for="id_provider">Provider:</label>
+
+                            <input class="vTextField" id="id_provider" maxlength="50" name="provider" type="text"  /><input id="initial-id_provider" name="initial-provider" type="hidden"/>
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-patient">
+
+
+                <div>
+
+
+                        <label class="required" for="id_patient">Patient:</label>
+
+                            <input class="vTextField" id="id_patient" maxlength="50" name="patient" type="text" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-product">
+
+
+                <div>
+
+
+                        <label class="required" for="id_product">Product:</label>
+
+                            <select id="id_product" name="product">
+<option value="" selected="selected">---------</option>
+<option value="PFM High Noble">PFM High Noble</option>
+<option value="PFM Non Precious">PFM Non Precious</option>
+<option value="Full Gold Crown">Full Gold Crown</option>
+<option value="Full Cast Semi Precious">Full Cast Semi Precious</option>
+<option value="Full Cast Non Precious">Full Cast Non Precious</option>
+<option value="Crown Fit to Partial">Crown Fit to Partial</option>
+<option value="Metal Occlusal">Metal Occlusal</option>
+<option value="Metal Lingual">Metal Lingual</option>
+<option value="Zirlux Temporary">Zirlux Temporary</option>
+<option value="Cast Coping">Cast Coping</option>
+<option value="PFM High Noble">PFM High Noble</option>
+<option value="PFM Semi Precious">PFM Semi Precious</option>
+<option value="PFM Bridges(Non Precious Alloy)">PFM Bridges(Non Precious Alloy)</option>
+<option value="Emax Bridge">Emax Bridge</option>
+<option value="Bruxzir Crown">Bruxzir Crown</option>
+<option value="Zirconia Crown">Zirconia Crown</option>
+<option value="Lava Crown">Lava Crown</option>
+<option value="Emax Crown">Emax Crown</option>
+<option value="Empress Crown">Empress Crown</option>
+<option value="Zirconia Veneer">Zirconia Veneer</option>
+<option value="Bruxzir Bridge 2">Bruxzir Bridge 2</option>
+<option value="Bruxzir Bridge">Bruxzir Bridge</option>
+<option value="Zirconia Bridge">Zirconia Bridge</option>
+<option value="Lava Bridge">Lava Bridge</option>
+<option value="Emax Bridge">Emax Bridge</option>
+<option value="Empress Bridge">Empress Bridge</option>
+<option value="Custom Abutment Anterior">Custom Abutment Anterior</option>
+<option value="Custom Abutment Posterior">Custom Abutment Posterior</option>
+<option value="Custom Zirconia Abutment Anterior">Custom Zirconia Abutment Anterior</option>
+<option value="Custom Zirconia Abutment Posterior">Custom Zirconia Abutment Posterior</option>
+<option value="Conus Abutment">Conus Abutment</option>
+<option value="Hybrid Bar">Hybrid Bar</option>
+</select>
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-teethnum">
+
+
+                <div>
+
+
+                        <label class="required" for="id_teethnum">Tooth No.</label>
+
+                            <select multiple="multiple" class="django-select2" data-allow-clear="false" data-minimum-input-length="0" id="id_teethnum" name="teethnum">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+</select>
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-location">
+
+
+                <div>
+
+
+                        <label class="required" for="id_location">Location:</label>
+
+                            <input class="vTextField" id="id_location" maxlength="50" name="location" type="text"  /><input id="initial-id_location" name="initial-location" type="hidden" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-expecteddate">
+
+
+                <div>
+
+
+                        <label class="required" for="id_expecteddate">Expected Date:</label>
+
+                            <input class="vDateField" id="id_expecteddate" name="expecteddate" size="10" type="text" />
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-status" style="display: none;">
+
+
+                <div>
+
+
+                        <label class="required" for="id_status">Status:</label>
+
+                            <select id="id_status" name="status">
+<option value="Saved">Saved</option>
+<option value="Placed">Placed</option>
+<option value="Received at Lab">Received at Lab</option>
+<option value="Accepted by Lab">Accepted by Lab</option>
+<option value="Rejected by Lab">Rejected by Lab</option>
+<option value="Order Held">Order Held</option>
+<option value="Processing">Processing</option>
+<option value="Shipped from Lab">Shipped from Lab</option>
+<option value="Arriving Today">Arriving Today</option>
+<option value="Received by Provider">Received by Provider</option>
+<option value="Completed">Completed</option>
+</select>
+
+
+
+                </div>
+
+        </div>
+
+        <div class="form-row field-remarks">
+
+
+                <div>
+
+
+                        <label class="required" for="id_remarks">Remarks:</label>
+
+                            <textarea class="vLargeTextField" cols="40" id="id_remarks" maxlength="500" name="remarks" rows="10">
+No remarks</textarea>
+
+
+
+                </div>
+
+        </div>
+
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="submit-row">
+<input type="submit" value="Place Order" class="default" name="_save" />
+
+
+<!-- <input type="submit" value="Save and add another" name="_addanother" />
+<input type="submit" value="Save and continue editing" name="_continue" /> -->
+</div>
+
+
+
+    <script type="text/javascript">
+        (function($) {
+            $(document).ready(function() {
+                $('.add-another').click(function(e) {
+                    e.preventDefault();
+                    showAddAnotherPopup(this);
+                });
+
+                $('form#order_form :input:visible:enabled:first').focus()
+
+            });
+        })(django.jQuery);
+    </script>
+
+
+
+
+<script type="text/javascript">
+(function($) {
+    var field;
+
+
+})(django.jQuery);
+</script>
+
+
+</div>
+</form></div>
+
+
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>
